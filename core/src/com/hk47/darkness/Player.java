@@ -53,7 +53,6 @@ public class Player {
             mPosition.x += -delta * accelerometerInput * Constants.PLAYER_MOVEMENT_SPEED;
 
             float accelerometerInputVertical = -Gdx.input.getAccelerometerZ() / (Constants.ACCELEROMETER_SENSITIVITY * Constants.GRAVITATIONAL_ACCELERATION);
-            Gdx.app.log("ACCELVERT", "" + accelerometerInputVertical);
             accelerometerInputVertical += Constants.VERTICAL_ACCELEROMETER_ADJUSTMENT;
             mPosition.y += -delta * accelerometerInputVertical * Constants.PLAYER_MOVEMENT_SPEED;
         }

@@ -17,9 +17,9 @@ public class Trike {
     }
 
     public void update(float delta) {
-        // Update velocity using icicle acceleration constant
+        // Update trike velocity using trike acceleration constant
         mVelocity.mulAdd(Constants.TRIKE_ACCELERATION, delta);
-        // Update position using velocity
+        // Update trike position using velocity
         mPosition.mulAdd(mVelocity, delta);
     }
 
